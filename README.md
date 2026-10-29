@@ -16,7 +16,7 @@ The analysis covers the gender analogy:
 `data/gender_demo.mat`:
 
 - `rate` (292 × 200): the 292 occurrences of gender words in the six stories (rows, in story order) by 200 units.
-  - The units are the top 200 principal components of the firing rates of the 437 recorded hippocampal neurons (91% of the variance), not single neurons.
+  - These simulated units are the top 200 principal components of the firing rates of the 437 recorded hippocampal neurons (91% of the variance across all podcast words), not single neurons, just to demo the code.
   - Rates were counted in a window that starts 80 ms after word onset and lasts the duration of the word plus 40 ms.
 - `side`: −1 or +1 for the two sides of the analogy (`sides`: male, female).
 - `pair`: the gender word pair (1–12) of each occurrence.
@@ -24,7 +24,7 @@ The analysis covers the gender analogy:
 - `word_rate` (1,353 × 200): the mean of the 200 units over the occurrences of every word type of the stories, from which random word pairs are drawn. The words are not given.
 - `labels` (12 × 2): pair labels, with singular and plural forms pooled. The labels are shuffled across pairs, so the label a pair carries is not its actual word pair.
 
-The panels therefore have the form of Figure 2A–D but are not the published panels: the units are principal components, and the pair labels are shuffled. The published values are in the Source Data of the paper.
+The panels therefore have the form of Figure 2A–D but are not the published panels: the simulated units are principal components, and the pair labels are shuffled. The published values are in the Source Data of the paper.
 
 ## What the code does
 
