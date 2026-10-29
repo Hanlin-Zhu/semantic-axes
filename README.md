@@ -29,7 +29,7 @@ The panels therefore have the form of Figure 2A–D but are not the published pa
 ## What the code does
 
 1. `analogy_auc`: for each unit, the balanced AUC (the AUC or 1 − AUC, whichever is larger) between the single-occurrence responses to the two sides, with P from 1,000 label shuffles. It also gives the word-level balanced AUC on each word form's mean response, with two P values: one from shuffling word labels, and one from reassigning occurrences among the word forms of each side.
-2. `select_units`: the gender-tuned units. These are units with trial-level p(AUC) < 0.125 (at least the 8 lowest), plus units with both word-level P values below 0.01.
+2. `select_units`: the gender-selective units. These are units with trial-level p(AUC) < 0.125 (at least the 8 lowest), plus units with both word-level P values below 0.01.
 3. `pair_alignment`: for each pair, the mean cosine similarity between its normalized difference vector and those of the other pairs, against 10,000 sets of random word pairs. The P values are Benjamini–Hochberg corrected across pairs.
 4. `nmds`: nonmetric 3-D MDS of the 24 word means. Each unit is z-scored across words, and distances are cosine distances. The fit is reported as Kruskal stress.
 5. The tail-aligned directions are the difference vectors of the pairs in the MDS space, rotated so that the mean direction of the aligned pairs points up.
