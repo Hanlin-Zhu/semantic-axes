@@ -1,6 +1,6 @@
 # Semantic axes in human hippocampal neurons: gender demonstration
 
-MATLAB code that runs the analysis behind Figure 2A–D of "A geometric foundation for word meaning in the brain" on demonstration data derived from the recordings.
+MATLAB code that runs the analysis behind "A geometric foundation for word meaning in the brain" on demonstration data derived from the recordings.
 
 The analysis covers the gender analogy:
 
